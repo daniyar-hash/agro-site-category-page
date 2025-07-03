@@ -215,96 +215,229 @@
         </div>
     </header>
     <main class="content">
+        <section class="banner section">
+            <div class="banner__inner ">
+                <h1 class="visually-hidden">Агрохимикаты</h1>
+                <div class="banner__body">
+                    <input type="radio" id="btn1" name="pagination__input"  value="number-1" checked>
+                    <input type="radio" id="btn2" name="pagination__input"  value="number-2">
+                    <input type="radio" id="btn3" name="pagination__input"  value="number-3">
+                    <input type="radio" id="btn4" name="pagination__input"  value="number-4">
+
+
+                    <ul class="banner__list slider">
+                        <li class="banner__list-item banner--1 slider ">
+                            <div class="container">
+                                <h2 class="slider__title">First banner</h2>
+                                <a class="slider__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
+                            </div>
+                        </li>
+                        <li class="banner__list-item banner--2 slider">
+                            <div class="container">
+                                <h2 class="slider__title">Second banner</h2>
+                                <a class="slider__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
+                            </div>
+                        </li>
+                        <li class="banner__list-item banner--3 slider">
+                            <div class="container">
+                                <h2 class="slider__title">Third banner</h2>
+                                <a class="slider__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
+                            </div>
+                        </li>
+                         <li class="banner__list-item banner--4 slider">
+                            <div class="container">
+                                <h2 class="slider__title">Foufth banner</h2>
+                                <a class="slider__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="banner__pagination pagination">
+                        <ul class="pagination__list">
+                            <li class="pagination__item ">
+                                <label for="btn1"   class="pagination__label active" tabindex="0"
+                                   onkeydown="if(event.key === 'Enter' || event.key === ' ') this.click()">
+                                    <span class="pagination__icon visually-hidden">Кнопка сдайдер-1</span>
+                                </label>
+                            </li>
+                            <li class="pagination__item ">
+                               <label for="btn2"   class="pagination__label" tabindex="0"
+                                   onkeydown="if(event.key === 'Enter' || event.key === ' ') this.click()">
+                                    <span class="pagination__icon visually-hidden">Кнопка сдайдер-2</span>
+                                </label>
+                            </li>
+                            <li class="pagination__item ">
+                                <label for="btn3"   class="pagination__label" tabindex="0"
+                                   onkeydown="if(event.key === 'Enter' || event.key === ' ') this.click()">
+                                    <span class="pagination__icon visually-hidden">Кнопка сдайдер-3</span>
+                                </label>
+                            </li>
+                            <li class="pagination__item ">
+                               <label for="btn4"   class="pagination__label" tabindex="0"
+                                   onkeydown="if(event.key === 'Enter' || event.key === ' ') this.click()">
+                                    <span class="pagination__icon visually-hidden">Кнопка сдайдер-4</span>
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="breadcrumbs container">
             <div class="breadcrumbs__inner">
                 <ul class="breadcrumbs__list">
                     <li class="breadcrumbs__item ">
-                        <a href="/" class="breadcrumbs__link">Главная
+                        <a href="/agro-site-main-page" class="breadcrumbs__link">Главная
                             <span class="visually-hidden">Стрелка навигации</span>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 4L12 10L8 16" stroke="#1D1D1D" stroke-width="4"/>
                             </svg>
                         </a>
                     </li>
-                     <li class="breadcrumbs__item is-current">
-                        <a class="breadcrumbs__link">Каталог</a>
+                     <li class="breadcrumbs__item">
+                        <a href="/agro-site-catalog-page"  class="breadcrumbs__link">Каталог
+                            <span class="visually-hidden">Стрелка навигации</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 4L12 10L8 16" stroke="#1D1D1D" stroke-width="4"/>
+                            </svg>
+                        </a>
+                    </li>
+                        <li class="breadcrumbs__item is-current">
+                        <a class="breadcrumbs__link">Пестициды</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <section class=" section">
-            <div class="section__inner container">
-                 <header class="section__header">
-                    <h2 class="section__title products__title">
-                       Каталог
-                    </h2>
-                 </header>
-                 <div class="section__body categories">
-                    <ul class="categories__list grid grid--3">
-                        <li class="categories__item">
-                            <div href="/" class="category">
-                                <h3 class="category__title"><a href="/" class="category__title-link">Пестициды</a></h3>
-                                <ul class="category__list">
-                                    <li class="category__item">
-                                        <a href="/" class="category__link">Фунгициды</a>
+        <section class="section category-page">
+            <div class="category-page__inner container">
+                <h1 class="category-page-title">Пестициды</h1>
+                <div class="category-page__body">
+                    <div class="category-menu">
+                        <ul class="category-menu__list">
+                            <li class="category-menu__item">
+                                <a href="#" class="category-menu__link">Пестициды</a>
+                                <div class="category-menu__dropdown">
                                     
-                                    </li>
-                                     <li class="category__item">
-                                        <a href="/" class="category__link">Инсектициды</a>
-                                    
-                                    </li>
-                                     <li class="category__item">
-                                        <a href="/" class="category__link">Акарициды</a>
-                                    
-                                    </li>
+                                </div>
 
-                                </ul>
-
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-page__catalog products">
+                        <header class="products__sort">
+                            <ul class="products__sort-list">
+                             <li class="products__sort-item">
+                                 Сортировать
+                                </li>
+                                <li class="products__sort-item">
+                                    <select name="price" id="price">
+                                        <option value="По цене" selected="selected">По цене</option>
+                                    </select>
+                                </li>
+                                    <li class="products__sort-item">
+                                    <select name="price" id="price">
+                                        <option value="По популярности">По популярности</option>
+                                    </select>
+                                </li>
+                                    <li class="products__sort-item">
+                                    <select name="price" id="price">
+                                        <option value="По наличию" >По наличию</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <div class="products__sort-view">
+                                <span class="products__sort-text">Вид:</span>
+                                <button class="products_sort-button" aria-label="Вид каталога: плитка" type="button">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="6" fill="#1D1D1D"/>
+                                    <rect y="10" width="24" height="6" fill="#1D1D1D"/>
+                                    <rect y="20" width="24" height="6" fill="#1D1D1D"/>
+                                    </svg>
+                                </button>
+                                <button class="products_sort-button" aria-label="Вид каталога: плитка" type="button">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="6" height="6" fill="white"/>
+                                    <rect y="10" width="6" height="6" fill="white"/>
+                                    <rect y="20" width="6" height="6" fill="white"/>
+                                    <rect x="9" width="6" height="6" fill="white"/>
+                                    <rect x="9" y="10" width="6" height="6" fill="white"/>
+                                    <rect x="9" y="20" width="6" height="6" fill="white"/>
+                                    <rect x="18" width="6" height="6" fill="white"/>
+                                    <rect x="18" y="10" width="6" height="6" fill="white"/>
+                                    <rect x="18" y="20" width="6" height="6" fill="white"/>
+                                    </svg>
+                                </button>
                             </div>
-                        </li>
-                        <li class="categories__item">
-                            <div href="/" class="category">
-                                <h3 class="category__title">
-                                    <a href="/" class="category__title-link">Удобрения</a>
-                                </h3>
-                                <ul class="category__list">
-                                    <li class="category__item">
-                                        <a href="/" class="category__link">Регуляторы роста</a>
-                                    
-                                    </li>
-                                     <li class="category__item">
-                                        <a href="/" class="category__link">Стимуляторы роста</a>
-                                    
-                                    </li>
-                       
-                                </ul>
-
-                            </div>
-                            
-                        </li>
-                        <li class="categories__item">
-                            <div href="/" class="category">
-                                <h3 class="category__title"><a href="/" class="category__title-link" >Прочее</a></h3>
-                                <ul class="category__list">
-                                    <li class="category__item">
-                                        <a href="/" class="category__link">текст</a>
-                                    
-                                    </li>
-                                     <li class="category__item">
-                                        <a href="/" class="category__link">текст</a>
-                                    
-                                    </li>
-                                     <li class="category__item">
-                                        <a href="/" class="category__link">текст</a>
-                                    
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </li>
-                    </ul>
-                 </div>
+                        </header>
+                        <ul class="products__list">
+                            <li class="products__item">
+                                <a href="#" class="products__link">
+                                    <img src="/img/category-page/products/1.png" width="260" height="260" alt="Product" loading="lazy" >
+                                    <h2 class="products__title">Product-1</h2>
+                                    <p class="products__price">1200 тнг.</p>
+                                    <a href="№" class="button products__button">Подробнее</a>
+                                </a>
+                            </li>
+                              <li class="products__item">
+                                <a href="#" class="products__link">
+                                    <img src="/img/category-page/products/2.png" width="260" height="260" alt="Product" loading="lazy" >
+                                    <h2 class="products__title">Product-1</h2>
+                                    <p class="products__price">1200 тнг.</p>
+                                    <a href="№" class="button products__button">Подробнее</a>
+                                </a>
+                            </li>
+                              <li class="products__item">
+                                <a href="#" class="products__link">
+                                    <img src="/img/category-page/products/3.png" width="260" height="260" alt="Product" loading="lazy" >
+                                    <h2 class="products__title">Product-1</h2>
+                                    <p class="products__price">1200 тнг.</p>
+                                    <a href="№" class="button products__button">Подробнее</a>
+                                </a>
+                            </li>
+                              <li class="products__item">
+                                <a href="#" class="products__link">
+                                    <img src="/img/category-page/products/4.png" width="260" height="260" alt="Product" loading="lazy" >
+                                    <h2 class="products__title">Product-1</h2>
+                                    <p class="products__price">1200 тнг.</p>
+                                    <a href="№" class="button products__button">Подробнее</a>
+                                </a>
+                            </li>
+                              <li class="products__item">
+                                <a href="#" class="products__link">
+                                    <img src="/img/category-page/products/5.png" width="260" height="260" alt="Product" loading="lazy" >
+                                    <h2 class="products__title">Product-1</h2>
+                                    <p class="products__price">1200 тнг.</p>
+                                    <a href="№" class="button products__button">Подробнее</a>
+                                </a>
+                            </li>
+                              <li class="products__item">
+                                <a href="#" class="products__link">
+                                    <img src="/img/category-page/products/6.png" width="260" height="260" alt="Product" loading="lazy" >
+                                    <h2 class="products__title">Product-1</h2>
+                                    <p class="products__price">1200 тнг.</p>
+                                    <a href="№" class="button products__button">Подробнее</a>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-page__scroll-wrapper">
+                        <span class="scroll-up">
+                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="48" height="48" transform="matrix(-4.37114e-08 1 1 4.37114e-08 -8.74228e-08 8.74228e-08)" stroke="#C53720" stroke-width="4"/>
+                            <path d="M12 32L26 20L40 32" stroke="#C53720" stroke-width="4"/>
+                            </svg>
+                        </span>
+                        <span class="scroll-down">
+                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                            <rect x="2" y="50" width="48" height="48" transform="rotate(-90 2 50)" stroke="#C53720" stroke-width="4"/>
+                            <path d="M12 20L26 32L40 20" stroke="#C53720" stroke-width="4"/>
+                            </g>
+                            </svg>
+                        </span>                     
+                    </div>
+                </div>
             </div>
         </section>
     </main>

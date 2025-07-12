@@ -1,0 +1,65 @@
+.category-products{
+
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &__sort{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        &-list{
+            display: flex;
+            column-gap: 20px;
+
+        }
+
+    }
+
+    &__list{
+        gap: 24px;
+    }
+
+    &__item{
+        background-color: var(--color-light);
+        border:var(--border);
+        display: flex;
+        flex-direction: column;
+        padding-inline: 15px;
+        padding-bottom: 27px;
+        padding-top: 40px;
+        row-gap: 10px;
+
+
+        img{
+            height: auto;
+        }
+    }
+
+
+    &__link{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__title{
+        text-transform: uppercase;
+        font-weight: inherit;
+    }
+    &__price{
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    // &__button{
+    //     width: 100%;
+    // }
+
+  
+
+
+
+}

@@ -1,0 +1,68 @@
+.categories-aside{
+    background-color: var(--color-dark);
+    width: 220px;
+   
+
+
+
+    &__menu{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__item{
+
+        padding: 10px;
+
+
+        &.is-open>.categories-aside__link>svg.categories-aside__icon{
+            rotate: 180deg;
+
+        }
+
+
+   }
+
+
+    &__link,
+    &__sublink
+    {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-inline: 10px;
+        padding-block: 5px;
+        background-color: var(--color-green-alt);
+        transition-duration: var(--transition-duration);
+        
+
+        @include hover{
+            color: rgb(211, 203, 203);
+        }
+
+        
+    }
+
+     &__sublink{
+        background-color: inherit;
+        color: inherit;
+
+     }
+
+
+
+    &__dropdown{
+        display: none;
+
+    }
+    &__dropdown.to-show{
+        display: block;
+    }
+
+    &__submenu{
+        display: flex;
+        flex-direction: column;
+    }
+}

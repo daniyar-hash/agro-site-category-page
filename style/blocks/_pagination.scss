@@ -1,87 +1,58 @@
 .pagination{
 
-& ul a{
-		font-size: 16px;
-		
-		color: rgba(0,0,0,0.3);
-}
 
-& ul a:hover{
-	color: rgba(0,0,0,0.6);
-}
-& ul a:active{
-	color: rgba(0,0,0,1);
-}
-
-&{
-
-	min-height: 100px;
+	min-height: 50px;
 	width: 100%;
-	height: 70px;
-	padding-left: 72px;
-	
+	padding-bottom: 10px;
+	font-size: 16px;
 
-}
-
-&-block{
+&__inner{
 
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	column-gap: 50px;
 	background-color: #ebebeb;
+	align-items: center;
 	
 }
 
-
-
-
-
-&-list{
-	margin-top: 20px;
-}
-
-&-list li{
-	width: 40px;
-	display: inline-block;
-}
-
-
-&-list &-item-current{
-	color: #000000;
-
-
+&__list{
+	display: flex;
+	column-gap: 40px;
 
 }
 
+&__item{
+		&.is-current{
+		color: var(--color-light);
+		background-color: var(--color-green-alt);
+
+		.pagination__link{
+			cursor:default;
+			user-select: none;
+		} 
+	
+	}
 }
 
-.btn-pagination{
-	border:none;
+&__link{
+	@include flex-center;
+	width: 30px;
+	height: 30px;
+
+}
+
+
+.pagination__button{
 	background-color: transparent;
-	font-family: "Gilroy Extra Bold", Arial, sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 900;
-	text-transform: uppercase;
-	width: 110px;
-	height: 60px;
+	width: 20px;
+	height: 20px;
+	@include flex-center(true);
+	@include reset-button;
 
 }
 
-.btn-pagination:hover{
-	background-color:#d9d9d9;
+
+
+
 }
-
-.btn-pagination:active{
-	color: rgba(0,0,0,0.3);
-}
-
-
-.btn-pagination.btn-back{
-	left: 1px;
-	
-}
-.btn-pagination.btn-next{
-
-	right: 1px;
-}
-

@@ -1,6 +1,7 @@
 .categories-aside{
     background-color: var(--color-dark);
     width: 220px;
+    border-radius: 10px;
    
 
 
@@ -36,6 +37,8 @@
         padding-block: 5px;
         background-color: var(--color-green-alt);
         transition-duration: var(--transition-duration);
+        border-radius: 10px;
+
         
 
         @include hover{

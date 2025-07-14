@@ -1122,6 +1122,7 @@ h4, .h4 {
   background-color: rgba(199, 200, 185, 0.8509803922);
   color: var(--color-dark);
   border-radius: 10px;
+  width: 18.5vw;
 }
 .categories-aside__menu {
   display: flex;

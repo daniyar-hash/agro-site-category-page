@@ -1119,8 +1119,8 @@ h4, .h4 {
 }
 
 .categories-aside {
-  background-color: var(--color-dark);
-  width: 220px;
+  background-color: rgba(199, 200, 185, 0.8509803922);
+  color: var(--color-dark);
   border-radius: 10px;
 }
 .categories-aside__menu {
@@ -1146,12 +1146,12 @@ h4, .h4 {
 }
 @media (hover: hover) {
   .categories-aside__link:hover, .categories-aside__sublink:hover {
-    color: rgb(211, 203, 203);
+    color: var(--color-light);
   }
 }
 @media (hover: none) {
   .categories-aside__link:active, .categories-aside__sublink:active {
-    color: rgb(211, 203, 203);
+    color: var(--color-light);
   }
 }
 .categories-aside__sublink {

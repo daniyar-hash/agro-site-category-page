@@ -1,6 +1,6 @@
 .categories-aside{
-    background-color: var(--color-dark);
-    width: 220px;
+    background-color: #c7c8b9d9;
+    color: var(--color-dark);
     border-radius: 10px;
    
 
@@ -42,7 +42,7 @@
         
 
         @include hover{
-            color: rgb(211, 203, 203);
+            color: var(--color-light);
         }
 
         
